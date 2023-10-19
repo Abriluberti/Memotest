@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!-- Botón para ir a la página de login -->
+      <ion-button (click)="goToLogin()">
+        <ion-icon name="log-in"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+   
+    <ion-buttons slot="end">
+      <!-- Botón para ir a la página principal -->
+      <ion-button (click)="goToMain()">
+        <ion-icon name="home"></ion-icon>
+      </ion-button>
+      <!-- Botón para ir a la página de listado -->
+      <ion-button (click)="goToList()">
+        <ion-icon name="list"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <div class="timer">
+    Tiempo: {{ timer }} segundos
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="card-grid">
+    <div *ngFor="let row of cardRows" class="card-row">
+      <div *ngFor="let card of row" class="card" (click)="flipCard(card)">
+        <img [src]="card.flipped || card.matched ? card.image : 'assets/animales/reverso.jpg'" alt="Card Image">
+      </div>
+    </div>
+  </div>
+  
+
+  <div *ngFor="let registro of mejoresRegistros">
+    <!-- Aquí muestra los detalles de cada registro -->
+  </div>
+</ion-content>

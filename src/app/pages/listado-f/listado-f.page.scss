@@ -1,0 +1,30 @@
+.registro-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #f0abd9;
+    margin: 8px;
+    text-align: center;
+    background-color: #a53d7d; /* Fondo gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  .registro-tiempo {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #f1eded; /* Texto negro */
+  }
+  
+  .registro-milisegundos {
+    font-size: 10px;
+    margin-bottom: 8px;
+    color: #777; /* Texto gris más claro */
+  }
+  
+  .registro-usuario {
+    font-size: 16px;
+    color: #9f1bb9; /* Texto azul */
+    font-weight: bold; /* Texto en negrita */
+  }
+  

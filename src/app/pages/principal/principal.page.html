@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Elige el nivel de dificultad
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item (click)="startGame('easy')">
+      <ion-label>Fácil (3 pares de animales)</ion-label>
+    </ion-item>
+    <ion-item (click)="startGame('medium')">
+      <ion-label>Medio (5 pares de herramientas)</ion-label>
+    </ion-item>
+    <ion-item (click)="startGame('hard')">
+      <ion-label>Difícil (8 pares de frutas)</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

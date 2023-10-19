@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "memotest-dfbd9"
+  },
+  "targets": {
+    "memotest-dfbd9": {
+      "hosting": {
+        "app": [
+          "memotest-dfbd9"
+        ]
+      }
+    }
+  }
+}

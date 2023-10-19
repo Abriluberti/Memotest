@@ -1,0 +1,49 @@
+<ion-header>
+  <!-- Tu encabezado -->
+</ion-header>
+
+<ion-content class="login-content">
+  <!-- Título -->
+  <ion-title class="login-title">Inicia Sesión con </ion-title>
+  <ion-title class="login-subtitle">Juego de memoria</ion-title>
+  <!-- Imagen debajo del título -->
+  <div class="image-container">
+    <img src="assets/iconi.jpeg" alt="Imagen de relevamiento visual" class="image" />
+  </div>
+
+  <!-- Formulario de inicio de sesión -->
+  <ion-item>
+    <ion-input label="Correo " [(ngModel)]="email" type="email"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-input label="Clave" [(ngModel)]="password" type="password"></ion-input>
+  </ion-item>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-title class="page-title">
+       
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-button expand="full" (click)="login()">Iniciar Sesión</ion-button>
+  <div class="heart-container">
+    <ion-button (click)="OnFillFields('admin@admin.com', '111111')" expand="block" fill="clear" shape="round" class="heart-button">
+      <ion-icon slot="start" name="heart"></ion-icon>
+      1
+    </ion-button>
+    <ion-button (click)="OnFillFields('invitado@invitado.com', '222222')" expand="block" fill="clear" shape="round" class="heart-button">
+      <ion-icon slot="start" name="heart"></ion-icon>
+      2
+    </ion-button>
+    <ion-button (click)="OnFillFields('usuario@usuario.com', '333333')" expand="block" fill="clear" shape="round" class="heart-button">
+      <ion-icon slot="start" name="heart"></ion-icon>
+      3
+    </ion-button>
+    
+  </div>
+  
+
+</ion-content>

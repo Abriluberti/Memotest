@@ -1,0 +1,28 @@
+.card-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* 3 filas del mismo tamaño */
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas del mismo tamaño */
+  gap: 10px; /* Espacio entre las cartas */
+  justify-content: center;
+}
+
+.card {
+  width: 100px; /* Ancho deseado */
+  height: 150px; /* Alto deseado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc; /* Borde para separar las cartas */
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.timer {
+  text-align: center;
+  margin: 10px auto; /* Ajusta el margen según tus necesidades */
+  font-size: 20px; /* Tamaño de fuente deseado */
+  width: max-content;
+}

@@ -1,0 +1,8 @@
+<!-- memory-grid.component.html -->
+<ion-grid>
+  <ion-row *ngFor="let row of grid">
+    <ion-col *ngFor="let card of row" (click)="revealCard(card)">
+      <img [src]="card.isRevealed ? card.image : 'assets/frutas/banana.jpg'" alt="Card">
+    </ion-col>
+  </ion-row>
+</ion-grid>
